@@ -7,3 +7,5 @@ setup libtorch v2_1_1b -q e26
 export LIBTORCH="/cvmfs/larsoft.opensciencegrid.org/products/libtorch/v2_1_1b/Linux64bit+3.10-2.17-e26"
 
 export MY_TEST_AREA=`pwd`
+
+export FW_SEARCH_PATH=$MY_TEST_AREA:$MY_TEST_AREA/LArReco/settings:$MY_TEST_AREA/LArMachineLearningData:$FW_SEARCH_PATH

@@ -27,4 +27,8 @@ cd $MY_TEST_AREA/LArReco
 cmake -S . -B build -D CMAKE_PREFIX_PATH="$MY_TEST_AREA/PandoraSDK/build/install;$MY_TEST_AREA/PandoraMonitoring/build/install;$MY_TEST_AREA/LArContent/build/install;${LIBTORCH}/share/cmake" -D PANDORA_LIBTORCH=ON
 cmake --build build --target install --parallel 2
 
+cd $MY_TEST_AREA/LArMachineLearningData
+./download.sh dune lbl
+./download.sh dune atmos
+
 cd $MY_TEST_AREA
