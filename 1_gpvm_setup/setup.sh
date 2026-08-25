@@ -8,4 +8,6 @@ export LIBTORCH="/cvmfs/larsoft.opensciencegrid.org/products/libtorch/v2_1_1b/Li
 
 export MY_TEST_AREA=`pwd`
 
-export FW_SEARCH_PATH=$MY_TEST_AREA:$MY_TEST_AREA/LArReco/settings:$MY_TEST_AREA/LArMachineLearningData:$FW_SEARCH_PATH
+export FW_SEARCH_PATH=$MY_TEST_AREA/LArMachineLearningData:$FW_SEARCH_PATH
+export FW_SEARCH_PATH=$MY_TEST_AREA/LArReco/settings:$MY_TEST_AREA/LArReco/settings/workshop:$FW_SEARCH_PATH
+export FW_SEARCH_PATH=$MY_TEST_AREA:$FW_SEARCH_PATH
